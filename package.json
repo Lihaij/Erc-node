@@ -42,7 +42,7 @@
     "request": "^2.85.0",
     "request-promise": "^4.2.2",
     "send-sms": "git+https://github.com/mpinc/send-sms.js.git#master",
-    "sequelize": "^4.31.2",
+    "sequelize": "^5.15.1",
     "soap": "^0.26.0",
     "string_decoder": "^1.2.0",
     "tedious": "^2.0.0",
