@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Gutenberg</title>
+
+	<link rel="stylesheet" href="<%= basedir %>/plugins/Gutenberg/dist/gutenberg.min.css" media="print" charset="utf-8">
+	<link rel="stylesheet" href="<%= basedir %>/plugins/Gutenberg/dist/themes/modern.min.css" media="print" charset="utf-8">
+	<!-- <link rel="stylesheet" href="/Users/huliqun/Work/nca-server/printTemplate/plugins//plugins/bootstrap/css/bootstrap.min.css" media="print" charset="utf-8"> -->
+	<style>
+		.attachment {
+			width: 100%;
+			margin-bottom: 20px;
+			border-color: #000000;
+			border-collapse: collapse
+		}
+
+		.attachment td {
+			text-align: center;
+		}
+
+		.textunderline {
+			/* padding-bottom: 5px; */
+			border-bottom: 0.1em solid;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="width: 49.58333em; page-break-before: always;">
+		<div style="height: 23em;"></div>
+		<h1 style="text-align:center;">家庭居室装饰装修施工合同</h1>
+	</div>
+	<div style="width: 49.58333em; page-break-before: always;">
+		<h2 style="text-align:center;">装修施工合同</h2>
+		<p>发包人(简称甲方)<span class="textunderline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=ejsData.aname%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			预留接受施工进展信息手机号<span class="textunderline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=ejsData.aphone%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/>
+			承包人(简称乙方)<span class="textunderline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=ejsData.bname%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<br/>
+					<strong>依照《中华人民共和国合同法》、《中华人民共和国消费者权益保护法》以及其他有关法律法规的规定，结合本工程的具体情况， 甲、乙双方在遵循自愿、平等、公平、诚信原则的基础上，经双方协商一致，签订本合同。</strong><br/>
+		</p>
+		<h4>第一条 工程概况和造价</h4>
+		<p>
+			1.甲方装饰装修(以下简称装饰)的住宅系合法拥有。 甲方承诺有权对该住宅进行装饰，由此而产生的一切后果由甲方承担责任。乙方为经工商行政管理部门核准登记的企业。<br/>
+			2.装饰施工地址<span class="textunderline">&nbsp;&nbsp;<%=ejsData.oaddress%>&nbsp;&nbsp;</span>。<br/>
+			3.计价面积<span class="textunderline">&nbsp;&nbsp;<%=ejsData.srcage%>&nbsp;&nbsp;</span>平方米。<br/>
+			4.承包方式 整体家装<br/>
+			5.工程总价款¥<span class="textunderline">&nbsp;&nbsp;<%=ejsData.final_offer%>&nbsp;&nbsp;</span>元<br/>
+			总价款是甲、乙双方对设计方案、工程报价确认后的金额，在一般情况下在业主不改变设计和施工方案的情况下，竣工结算的上 下增减幅度在没有项目变更的情况下不超过总价款(预算价)的10%。<br/>
+			合同签订生效后，如变更施工内容、变更材料，这部分的工程款应当按实计算<br/>
+			<strong style="color:#ff0063;">6．工期：<br/>
+			自<span class="textunderline">&nbsp;&nbsp;<%=ejsData.byear%>&nbsp;&nbsp;</span>年<span class="textunderline">&nbsp;&nbsp;<%=ejsData.bmon%>&nbsp;&nbsp;</span>月<span class="textunderline">&nbsp;&nbsp;<%=ejsData.bday%>&nbsp;&nbsp;</span>日起，工期为（    ）天工作日（开工日期自乙方进料后的第二天起计）；工期计算以工作日 计（星期六、 日及国家法定节假日不计算在内），每工作日工时为____小时；星期六、日及法定节假日顺延，以工程期限不含报建、业主自购 产品、安装及配饰采购安装的时间花费。业主自行订做工程亦不计入本公司的保证工期内。
+			</strong>
+		</p>
+		<h4>第二条 材料供应</h4>
+		<p>
+			1．甲方提供的材料、设备，应是符合设计要求的合格产品，如需委托乙方安装并保管，应按时送达现场。同时，甲、乙双方应 办理验收交接手续，保管费根据参考费率支付，由于保管或安装不当造成的损失，由乙方负责赔偿；如果甲方未委托乙方保管或 安装，则乙方不得收取保管费。<br/> 2．甲方提供的材料、设备，均应用于本合同规定的住宅装饰，非经甲方同意，乙方不得挪作他用。如乙方违反此规定，按挪用 材料、设备价款的原价补偿给甲方。<br/> 3．施工中如乙方发现甲方提供的材料、设备有质量问题或规格差异，应及时向甲方提出。甲方仍表示使用的，由此造成工程质
+			量问题，责任由甲方承担，乙方将不承担任何责任和损失。
+			<br/> 4．甲方或者乙方提供的材料应当符合《室内装饰装修材料有害物质限量 10 项强制性国家标准》。<br/>
+		</p>
+		<h4>第三条 工程质量及验收</h4>
+		<p>
+			1．本工程执行<span class="textunderline">国家</span>现行的《住宅装饰装修工程施工规范》、本市现行的《住宅装饰装修验收标准》和《住宅装饰装修服务规范》， 并应符合国家现行的《住宅设计规范》及《特殊装置或场所的要求》。<br/> 2．本工程由 乙 方设计，提供施工图纸一式 3 份。<br/> 3．甲方提供的材料、设备质量不合格而影响工程质量，其返工费用由甲方承担，工期顺延。
+			<br/> 4．由于乙方原因造成质量事故，其返工费用由乙方承担，工期不变，特殊情况甲、乙双方可协商处理。
+			<br/> 5．在施工过程中，甲方提出变更修改设计、增减工程项目或者变更材料设备，须提前与乙方联系，在签订《工程项目变更单》 后，方能进行施工，由此影响竣工日期的，由甲、乙双方商定。凡甲方私自与施工人员或其他管理人员商定更改施工内容、增加 施工项目所引起的一切后果，由甲方自负；给乙方造成一切损失的，甲方应予赔偿。<br/> 6．甲、乙双方应及时办理隐蔽工程和中间工程的检查与验收手续，甲方不能按预约日期参加验收，由乙方组织人员进行验收， 甲方应予承认。事后，若甲方要求复验，乙方应按要求办理复验。若复验通过，其复验及返工费用由甲方承担，工期也予顺延；
+			复验不通过，其返工费用由乙方承担，工期不变。
+			<br/> 7．工程竣工后，乙方应通知甲方在七日内组织验收。验收通过的，办理验收移交手续。如果甲方在规定时间内不能组织验收， 须及时通知乙方，另定验收日期。如竣工验收通过，甲方应承认原竣工日期，并承担乙方的看管费用和其他相关费用。装饰工程 未经验收或验收不通过的，甲方有权拒收，乙方承担返工及延期交付的责任。部分不影响房屋装修整体使用的辅助项目，如小五 金安装，少量照明安装，内门把手锁具等未安装完毕的，不影响整体的装修验收通过，由乙方另行向甲方确认完成日期。<br/> 8．工程竣工验收通过，乙方向甲方提供
+			<span style="color:#ff0063;">《工程保修单》</span>。保修期按合同约定为贰年。凭保修单实行保修，保修期从竣工验收通过 签字或盖章之日算起。
+		</p>
+		<h4>第四条 安全生产和防火</h4>
+		<p>
+			1．甲方提供的施工图纸或施工说明及施工场地应符合防火、防事故的要求，主要保证电气线路、燃气管道、给排水和其它管道 畅通、合格。乙方在施工中应采取必要的安全防护和消防措施，保障作业人员及相邻居民的安全，防止相邻居民住宅的管道堵塞、 渗漏水、停水停电、物品毁坏等事故发生。如遇上述情况发生，属甲方责任的，甲方负责修复或赔偿；属于乙方责任的，乙方负 责修复或赔偿。<br/> 2．甲、乙双方共同遵守装饰装修和物业管理的有关规定，施工中不得擅自改变房屋承重结构，拆、改共用管线和设施。
+		</p>
+		<h4>第五条 工程价款及结算</h4>
+		<p>
+			1．双方约定按下列方式支付工程款：<br/>
+			<table style="width:100%; margin-bottom: 20px; border-color:#000000; border-collapse:collapse" border="1">
+				<tr>
+					<th style="width:40%">工程进度（付款条件描述） </th>
+					<th style="width:20%">付款时间 </th>
+					<th style="width:20%">付款比例 </th>
+					<th style="width:20%">金 额</th>
+				</tr>
+				<tr>
+					<td>对预算、设计方案认可</td>
+					<td>合同签订当日 </td>
+					<td>总价款 65％</td>
+					<td style="text-align: right; padding-right: 10px;">
+						<%=ejsData.order_deposit%>元</td>
+				</tr>
+				<tr>
+					<td>木瓦工程验收 </td>
+					<td>验收当日 </td>
+					<td>总价款 30％</td>
+					<td style="text-align: right; padding-right: 10px;">
+						<%=ejsData.progress_payment%>元</td>
+				</tr>
+				<tr>
+					<td>硬装定制验收，成品家私家电入场</td>
+					<td>货到当日 </td>
+					<td>总价款 5％</td>
+					<td style="text-align: right; padding-right: 10px;">
+						<%=ejsData.final_payment%>元</td>
+				</tr>
+			</table>
+		</p>
+		<h4>第六条 施工配合</h4>
+		<p>
+			1．甲方工作：<br/>
+			<ol style="list-style:none;">
+				<li>（1）在装饰施工前，向施工所在地的物业管理企业申报登记。</li>
+				<li>（2）甲方应在开工前三日全部或者部分腾空房屋，清除影响施工的障碍物。对只能部分腾空的房屋中所滞留的家具、陈设等应 当采取保护措施。向乙方提供施工所需的水、电等必备条件，并说明使用注意事项。</li>
+				<li>（3）做好施工中因临时占用公用部位操作而影响邻里关系等协调工作。</li>
+				<li>（4）工程开工前，甲方应将房屋分户钥匙交乙方保管。工程交付时，甲方提供新锁，由乙方当场负责安装后交付使用。</li>
+				<li>（5）施工所在地的物业管理企业如有收取押金的项目，甲方应予以先行支付。如在整个施工过程中，由于乙方原因造成甲方所 支付的押金被物业没收，乙方应对被没收部分进行全额赔偿。</li>
+				<li>（6）甲方应告知施工所在地物业管理企业的有关物业管理规定，以便乙方遵守执行。</li>
+			</ol>
+			2．乙方工作：<br/>
+			<ol style="list-style:none;">
+				<li>（1）在开工前检查水、电、燃气、管道、楼（地）面、墙面，发现问题应及时通知甲方，由甲方负责解决和协调。</li>
+				<li>（2）早上 8 时前及晚上 6 时后不得进行有噪声的施工作业。</li>
+				<li>（3）组织有甲方参加的施工图纸或施工说明的现场交底。</li>
+				<li>（4）乙方负责清运施工中产生的垃圾，并按照物业管理企业指定的地点堆放。</li>
+				<li>（5）指派<span class="textunderline">项目经理</span>为乙方驻工地代表，全权负责合同履行，按要求组织施工，保质、保量、按期完成施工任务。如更换人员， 乙方应及时通知甲方。</li>
+			</ol>
+			3．由于甲方原因造成在施工中大量增加施工项目或变更施工内容、装饰材料及设备的，甲方应及时和乙方协商相应顺延工期。<br/>
+		</p>
+		<h4>第七条 违约责任</h4>
+		<p>
+			1．因乙方原因致使工程质量不符合约定的，甲方有权要求乙方在合理期限内无偿修理或者返工。经过修理或者返工后，造成逾 期交付的，乙方应当承担违约责任。<br/>
+			2．因乙方原因造成工程逾期交付的，每逾期一天，乙方应赔偿给甲方 <span class="textunderline">30</span> 元。<br/>
+			3．乙方擅自拆改房屋承重结构或共用管线和设施，由此发生的损失或事故（包括罚款），由乙方负责并承担责任。<br/>
+			4．乙方提供的材料、设备是假冒伪劣产品的，应按材料、设备价款的双倍赔偿甲方。<br/>
+			5．甲方未办理有关手续，强行要求乙方拆改原有房屋承重结构或共用管线和设施，乙方应拒绝施工。乙方未拒绝施工而发生损 失或事故（包括罚款）的，乙方承担连带责任。<br/>
+			6．由于甲方原因造成延期开工或中途停工，乙方可以顺延工程竣工日期，并有权要求赔偿停工、窝工等损失。每停工、窝工一 天，甲方应赔偿给乙方 <span class="textunderline">30</span> 元。<br/>
+			7．甲方如未按约定对隐蔽工程、竣工工程进行验收，乙方可以顺延工程竣工和交付日期，并有权要求赔偿停工、窝工等损失。每逾期一天，甲方应赔偿给乙方 <span class="textunderline">30</span> 元。<br/>
+			8．甲方未按合同约定时间付款的，每逾期一天，甲方应按此项目工程总价款的千分之一向乙方支付违约金，工期顺延。<br/>
+			9．工程未办理验收、结算手续，甲方提前使用或擅自入住，由此造成无法验收和损失的，由甲方承担全部责任。<br/>
+			<strong style="color:#ff0063;">10．春节期间根据工人放假的实际情况，施工周期顺延 30 个自然日。</strong>
+		</p>
+		<h4>第八条 争议解决方式</h4>
+		<p>
+			双方发生争议的，可协商解决，或依法向乙方人民法院提起诉讼。
+		</p>
+		<h4>第九条 合同的变更和解除</h4>
+		<p>
+			1．合同经双方签字生效后，双方必须严格遵守。任何一方需变更合同内容，应经协商一致后，重新签订补充协议。合同签订后 施工前，一方如要终止合同，应以书面形式提出，并按合同总价款 10 ％支付违约金，办理终止合同手续。<br/> 2．施工过程中任何一方提出终止合同，须向另一方以书面形式提出，经双方同意办理清算手续，订立终止合同协议，并由责任 方按合同总价款 10％赔偿，解除本合同。<br/>
+		</p>
+		<h4>第十条 其它约定</h4>
+		<p>
+			<strong class="textunderline">&nbsp;&nbsp;水电隐蔽工程保修五年&nbsp;&nbsp;</strong>
+		</p>
+		<h4>第十一条 权利义务</h4>
+		<p>
+			1.本合同签定后，即为对装修需求确认，除非经各方书面同意，任意方不得对合同进行修改和变更，否则视为违约。<br/> 2.甲方必须在如下时点到达现场配合乙方工作，如因甲方原因造成的项目延期，乙方有权对项目进行重新排期，且不承担工期延 误的相关责任：<br/>
+			<ol style="list-style:none;">
+				<li>（1）合同签订当天，到达现场进行项目首款 65%的支付并交付房屋钥匙。量房后甲方签字确认，视作对房屋交付装修时的情况 确认，如果在量房后出现的任何新增问题，相关责任由甲方承担。</li>
+				<li>（2）开工交底，甲方须在项目开工当时到场参与现场交底和部分材料验收，验收通过后签署验收单。甲方必须到场，进行项目 的现场交底和部分材料验收工作。</li>
+				<li>（3）木瓦工程验收合格后当天，由甲乙双方共同验收，通过验收后甲方须于当日向乙方支付进行项目中款 30%的支付。</li>
+				<li style="color:#ff0063;">（4）竣工验收完成 3 天（内），由甲乙双方共同验收。通过验收后甲方须于当日向乙方支付进行项目尾款 5%的支付。工程项目 在未验收前，甲方未经乙方同意不得擅自使用，否则视为该工程项目已通过甲方验收合格。</li>
+				<li>（5）甲方在签署定金单时，需支付部分定金款项，该定金在项目首期款中抵扣工程款。</li>
+			</ol>
+		</p>
+		<h4>第十二条 附则</h4>
+		<p>
+			1．本合同由甲乙双方签字或盖章后生效。<br/> 2．本合同一式 3 份，甲、乙双方各执一份，合同附件为本合同的组成部分，具有同等的法律效力。<br/>
+		</p>
+		<br/>
+		<br/>
+		<br/>
+		<div>
+			<div style="width: 49%; float: left; position: relative;">
+				甲方（签字盖章）： <br/>
+				<br/> 通讯地址：
+				<%=ejsData.oaddress%> <br/> 电 话：
+					<%=ejsData.aphone%> <br/>
+						<img style="position: absolute; top: -2.7em;left: 5em;width: 15em;" src="data:image/png;base64,<%=ejsData.write%>" />
+			</div>
+			<div style="width: 2%; float: left; position: relative;">
+			</div>
+			<div style="width: 49%; float: left; position: relative;">
+				乙方（签字盖章）：<br/>法定代表人（签字）：<br/> 地 址：
+				<%=ejsData.daddress%> <br/> 电 话：
+					<%=ejsData.dphone%> <br/>
+						<img style="position: absolute; top: -0.2em;left: 10em;width: 12em;" src="data:image/png;base64,<%=ejsData.seal%>" />
+			</div>
+		</div>
+		<div style="float:right; text-align: left; width:30%; margin-top: 5em" class="page-break-after">
+			签订日期:
+			<%=ejsData.sign_date%>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+</body>
+
+</html>

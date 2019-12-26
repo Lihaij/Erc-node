@@ -1,0 +1,45 @@
+{
+  "name": "gutenberg-css",
+  "version": "0.4.5",
+  "description": "Print your web pages with style",
+  "main": "scss/gutenberg.scss",
+  "browser": "dist/gutenberg.min.css",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch",
+    "test": "sass-lint"
+  },
+  "keywords": [
+    "framework",
+    "css",
+    "print",
+    "eyeglass-module"
+  ],
+  "author": "Fabien Sa",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/BafS/Gutenberg.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/BafS/Gutenberg/issues"
+  },
+  "homepage": "https://github.com/BafS/Gutenberg#readme",
+  "dependencies": {
+    "normalize-scss": "~7.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "eyeglass": {
+    "name": "gutenberg",
+    "sassDir": "scss",
+    "needs": "*",
+    "exports": false
+  },
+  "engines": {
+    "node": ">=4.0"
+  }
+}

@@ -1,0 +1,66 @@
+version: "2"
+
+services:
+  server:
+    build: .
+    volumes:
+      - ${PWD}/.:/home/erc-server
+    depends_on:
+      - redis
+      - database
+      - mongodb
+    expose:
+      - 9090
+    environment:
+      NODE_ENV: production
+      USER_NAME: erc-server
+    container_name: erc-server
+
+  redis:
+    image: redis:3.2.8
+    ports:
+      - 6380:6379
+    expose:
+      - 6379
+    volumes:
+      - ${PWD}/redis/data:/data
+    command: redis-server --appendonly yes
+    container_name: erc-redis
+
+  database:
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - 3307:3306
+    expose:
+      - 3306
+    volumes:
+      - ${PWD}/mysql/data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    container_name: erc-mysql
+
+  mongodb:
+    image: mongo:3.4
+    restart: always
+    ports:
+      - 27018:27017
+    expose:
+      - 27017
+    volumes:
+      - ${PWD}/mongodb/data:/data/db
+    command: mongod --smallfiles
+    container_name: erc-mongo
+
+  proxy:
+    image: nginx:latest
+    volumes:
+      - ${PWD}/config/nginx:/etc/nginx/conf.d
+      - ${PWD}/web:/home/erc-admin
+    ports:
+      - 9091:9091
+      - 9080:9080
+    depends_on:
+      - server
+    container_name: erc-server-project
