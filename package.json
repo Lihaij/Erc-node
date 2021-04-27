@@ -38,7 +38,7 @@
     "mysql2": "^1.5.1",
     "node-schedule": "^1.3.0",
     "qr-image": "^3.2.0",
-    "redis": "^2.7.1",
+    "redis": "^3.1.1",
     "request": "^2.85.0",
     "request-promise": "^4.2.2",
     "send-sms": "git+https://github.com/mpinc/send-sms.js.git#master",
